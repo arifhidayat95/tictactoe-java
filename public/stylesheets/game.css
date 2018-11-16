@@ -1,0 +1,12 @@
+#score-board{
+    width: 200px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+}
+
+.font-bg{
+    font-size: 50px;
+}

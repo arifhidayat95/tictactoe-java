@@ -1,0 +1,31 @@
+@()
+
+@main("TicTacToe") {
+    <div id="header" class="p-4 text-center">
+        <img src="@routes.Assets.versioned("images/icon.png")" class="figure-img" width="10%">
+        <h2>Let's play TicTacToe!</h2>
+    </div>
+    <div id="body" class="text-center row">
+        <div class="col-sm-12">
+            <h4 class="pb-2">Choose your level</h4>
+            <a class="btn btn-outline-primary game-type" data-type="3" href="/game/2p/3">3x3</a>
+            <a class="btn btn-outline-primary game-type" data-type="4" href="/game/2p/4">4x4</a>
+            <a class="btn btn-outline-primary game-type" data-type="5" href="/game/2p/5">5x5</a>
+        </div>
+        <div class="col-sm-12 p-5">
+            <h4 class="pb-2">Choose players</h4>
+            <form>
+                <div>
+                    <input type="radio" name="enemy" value="/game/2p/" checked> 2 Players
+                </div>
+                <div>
+                    <input type="radio" name="enemy" value="/game/com/"> VS Computer
+                </div>
+            </form>
+        </div>
+    </div>
+}{
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/index.css")">
+}{
+    <script src="@routes.Assets.versioned("javascripts/index.js")" type="text/javascript"></script>
+}
